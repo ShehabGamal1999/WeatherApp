@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, rgba(14, 29, 37, 1) 0%, rgba(7, 17, 23, 1) 100%);
+  color: white;
+  font-family: "Arial", sans-serif;
+  /* min-height: 100vh; */
+}
+#title {
+  font: poppins;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-top: 51 px;
+  margin-left: 80px;
+}
+#sub-title {
+  font: poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 65px;
+  text-align: center;
+}
+#sub-title span {
+  background: linear-gradient(90deg, rgba(202, 236, 255, 1) 0%, rgba(120, 207, 255, 1) 100%);
+  /* thia line to make the color appear just only on the text not on the background total */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* makes the actual text color transparent, so only the gradient is visible. */
+  -webkit-text-fill-color: transparent;
+}

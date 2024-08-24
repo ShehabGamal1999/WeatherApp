@@ -1,0 +1,58 @@
+.weather-card {
+  position: relative;
+  width: 400px;
+  padding: 20px;
+  padding-top: 100px;
+  margin: 160px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(36, 52, 61, 1);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.weather-icon {
+  position: absolute;
+  top: -165px;
+  left: 240px;
+  width: 300px;
+  height: 300px;
+  gap: 40px;
+}
+p {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 65px;
+  text-align: left;
+}
+.weather-city-temp,
+.weather-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* font: poppins;
+  font-size: 23px;
+  font-weight: 275px;
+  line-height: 65px;
+  align-content: center; */
+  color: rgba(255, 255, 255, 1);
+}
+#cityName {
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 65px;
+  text-align: center;
+}
+#temp {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 65px;
+  text-align: center;
+}
