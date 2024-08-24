@@ -3,56 +3,63 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 10px;
+  gap: 2%; /* Use percentage for responsive gap */
+  padding: 0 10px; /* Add some padding to prevent content from touching the edges */
 }
 
 .search-container input {
-  width: 1124px;
+  width: 80%; /* Use percentage instead of fixed width */
+  max-width: 1124px; /* Limit max width for larger screens */
   height: 40px;
-  padding: 20px;
+  padding: 15px; /* Adjust padding for responsiveness */
   border-radius: 12px;
   border: none;
   background-color: rgba(36, 52, 61, 1);
   color: rgba(255, 255, 255, 1);
-  font: poppins;
-  font-size: 23px;
-  font-weight: 275px;
-  line-height: 65px;
+  font-family: Poppins, sans-serif;
+  font-size: 5vw; /* Use vw for font size to make it responsive */
+  max-font-size: 23px; /* Set a max size for larger screens */
+  font-weight: 275; /* Fixed the incorrect weight */
+  line-height: 1.5; /* Adjusted line-height for better readability */
   align-content: center;
 }
+
 .search-container input::placeholder {
   color: rgba(255, 255, 255, 1);
-  font: poppins;
-  font-size: 23px;
-  font-weight: 275px;
-  line-height: 65px;
+  font-family: Poppins, sans-serif;
+  font-size: 2vw; /* Use vw for font size to make it responsive */
+  max-font-size: 23px; /* Set a max size for larger screens */
+  font-weight: 275; /* Fixed the incorrect weight */
+  line-height: 1.5; /* Adjusted line-height for better readability */
   align-content: center;
-  /* margin: 0 auto; */
 }
+
 .search-container button {
-  width: 150px;
-  height: 80px;
+  width: 25%; /* Use percentage instead of fixed width */
+  max-width: 150px; /* Limit max width for larger screens */
+  height: 70px; /* Adjusted height for responsiveness */
   background-color: rgba(36, 52, 61, 1);
   border-radius: 12px;
   border: none;
   color: rgba(255, 255, 255, 1);
-  font: poppins;
-  font-size: 23px;
-  font-weight: 275px;
-  line-height: 65px;
+  font-family: Poppins, sans-serif;
+  font-size: 5vw; /* Use vw for font size to make it responsive */
+  max-font-size: 23px; /* Set a max size for larger screens */
+  font-weight: 275; /* Fixed the incorrect weight */
+  line-height: 1.5; /* Adjusted line-height for better readability */
   align-content: center;
   cursor: pointer;
+}
 
-  /* height: 40px;
-  padding: 20px;
-  border-radius: 12px;
-  border: none;
-  background-color: rgba(36, 52, 61, 1);
-  color: rgba(255, 255, 255, 1);
-  font: poppins;
-  font-size: 23px;
-  font-weight: 275px;
-  line-height: 65px;
-  align-content: center;
-  cursor: pointer; */
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+  .search-container input {
+    font-size: 23px; /* Revert to original size */
+    padding: 20px; /* Revert to original padding */
+  }
+
+  .search-container button {
+    height: 80px; /* Revert to original height */
+    font-size: 23px; /* Revert to original size */
+  }
 }
